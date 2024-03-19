@@ -63,7 +63,7 @@ public abstract class Animal {
         while (true) {
             System.out.println("Введите вес животного:");
             weightStr = scanner.next().trim().replace(",", ".");
-            if (validators.isStringFloat(weightStr) && Float.parseFloat(weightStr) >= 0) {
+            if (validators.isStringFloat(weightStr) && Float.parseFloat(weightStr) > 0) {
                 break;
             }
             System.out.println("Введите вес корректно");

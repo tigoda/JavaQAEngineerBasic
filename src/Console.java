@@ -53,7 +53,7 @@ public class Console {
                 }
                 case LIST: {
                     if (animals.isEmpty()) {
-                        System.out.printf("Список животных пустой");
+                        System.out.print("Список животных пустой");
                         break;
                     }
 

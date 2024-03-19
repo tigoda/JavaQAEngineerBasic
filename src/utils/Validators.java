@@ -28,7 +28,7 @@ public class Validators {
     }
 
     public boolean isStringFloat(String str) {
-        Pattern pattern = Pattern.compile("^\\d+(?:[.,]\\d)$");
+        Pattern pattern = Pattern.compile("^+?(?:\\d+[.,]\\d*)$");
         Matcher matcher = pattern.matcher(str);
 
         return matcher.find();
